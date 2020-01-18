@@ -825,10 +825,6 @@ class ProxyRequestHandler(BaseHTTPRequestHandler):
 
 
 def test(HandlerClass=ProxyRequestHandler, ServerClass=ThreadingHTTPServer, protocol="HTTP/1.1"):
-    # if sys.argv[1:]:
-    #     port = int(sys.argv[1])
-    # else:
-    #     port = 8080
     port = 8080
     server_address = ('::1', port)
     print 'start'
