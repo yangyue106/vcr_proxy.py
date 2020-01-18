@@ -1,0 +1,8 @@
+{
+  "query": {
+    "/hljloan/loan/client_config.xml": ["ver"]
+  },
+  "raw_body": [
+    "/hljloan/loan/client_config.xml"
+  ]
+}
