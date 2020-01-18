@@ -1,8 +1,9 @@
 {
   "query": {
-    "/hljloan/loan/client_config.xml": ["ver"]
+    "/path1": ["name","password"]
   },
   "raw_body": [
-    "/hljloan/loan/client_config.xml"
+    "/path2",
+    "/path3"
   ]
 }
