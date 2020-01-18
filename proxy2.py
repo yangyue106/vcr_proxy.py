@@ -216,7 +216,6 @@ def str_to_response(response_str):
 
 
 server_on = True
-print id(server_on)
 
 buffered_request_list = []
 buffered_response_list = []
@@ -333,7 +332,7 @@ class VCRProcess:
     #             self.cass_decorator.close()
     #     except Exception:
     #         print 'close last cass error'
-    #     self.cass_decorator = vcr.use_cassette('record/oneconnect_record.yaml', record_mode=self.record_mode)
+    #     self.cass_decorator = vcr.use_cassette('record/record.yaml', record_mode=self.record_mode)
 
     def get_cass_decorator(self):
         if not self.cass_decorator:
@@ -343,7 +342,7 @@ class VCRProcess:
             my_vcr.register_matcher('cookie_match_on', cookie_match_on)
             my_vcr.register_matcher('raw_body_match_on', raw_body_match_on)
             self.cass_decorator = my_vcr.use_cassette(
-                'record/oneconnect_record.yaml',
+                'record/record.yaml',
                 record_mode=self.record_mode,
                 match_on=['query_match_on', 'method', 'scheme', 'host', 'port', 'path', 'cookie_match_on', 'raw_body_match_on']
                 )
